@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mama's Food - Menu</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <a href="/index.html" class="" id="navbar-logo"
+            ><img src="/img/logo.png" alt="Mamma's Food logo" class="logo"
+          /></a>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a href="menu.html" class="navbar-link"> Menu </a>
+            </li>
+            <li class="navbar-item">
+              <a href="about_us.html" class="navbar-link">About Us</a>
+            </li>
+            <li class="navbar-item">
+              <a href="contact_us.html" class="navbar-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br />
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message" required></textarea><br />
+          <button type="submit" class="send-button">Send</button>
+        </form>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <footer style="position: fixed; left: 0; bottom: 0">
+      <h2>Follow us:</h2>
+      <h3>
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-youtube"></ion-icon>
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </h3>
+      <p>©Mama's Food international; under license ©2023</p>
+    </footer>
+  </body>
+</html>

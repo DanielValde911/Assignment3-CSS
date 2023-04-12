@@ -1,0 +1,259 @@
+/* Reset the default styles for HTML elements */
+@font-face {
+  font-family: great-vibes;
+  src: url(fonts/GreatVibes-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  clear: both;
+  background-color: #fdfddb;
+}
+.navbar{
+    background-color: #1f5733;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.logo{
+  margin: 0 0;
+  width: 100px;
+}
+
+
+.navbar-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar-item{
+    height: 80px;
+}
+
+.navbar-link{
+    color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar-link:hover {
+    color: #c83628
+}
+
+/* Set the font family and size for the entire page */
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Style the main content area */
+.main{
+  min-height: calc(100vh - 80px - 67px);
+}
+.section-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  padding: 20px;
+}
+section {
+  width: 30%;
+  background-color: #f8f8f8;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+/* Styling of content in the menu*/
+.menu-content{
+  background-color: #f8f8f8;
+  background-image: url(img/texture.jpg);
+  margin: 20px 5rem;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-size: 150%;
+  font-family: great-vibes;
+  padding: 2rem;
+}
+.menu-content ul{
+  list-style-type: none;
+  line-height: 1.6;
+  text-align: left;
+}
+.menu-content ul h3{
+  text-indent: 50px;
+}
+#price{
+  text-align: right;
+  float: right;
+}
+/* Style of main*/
+main h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 32px;
+  text-transform: uppercase;
+  color: #333;
+}
+main h2 {
+  text-align: center;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* style of cards*/
+.card{
+  color: #f8f8f8;
+  background-image: url(img/bc.jpg);
+  background-size: cover;
+  padding: 12rem 0 0;
+  max-width: 35ch;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: 500ms ease;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card-content{
+  padding: 1.5rem;
+  background: linear-gradient( 
+  hsl(0 0% 0% / 0)
+  ,hsl(20 0% 0% / 0.3) 10%
+  ,hsl(0 0% 0% / 1)
+  );
+}
+.card-title{
+  margin-bottom: 5px;
+  text-align: left;
+  color: #fff;
+}
+
+.price{
+  font-size: 50%;
+  font-weight: bold;
+  background-color: #c83628;
+  color: #fff;
+  border: none;
+  margin: 16px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease
+}
+#first-pick{
+  background-image: url(img/bc.jpg);
+}
+#second-pick{
+  background-image: url(img/cb.jpg);
+}
+#third-pick{
+  background-image: url(img/shahi-paneer-recipe-1.jpg);
+}
+.price:hover, .price:focus{
+  background-color: #ff3737;
+}
+/* style of go to menu button*/
+
+.go-to-menu{
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.go-to-menu h2{
+  margin: 2rem;
+}
+
+.go-to-menu-button{
+font-size: 4rem;
+font-weight: bold;
+background: #c83628;
+width: 160px;
+padding: 20px;
+text-align: center;
+text-decoration: none;
+color: #FFF;
+border-radius: 5px;
+cursor: pointer;
+margin: 3rem;
+transition: background-color 0.5s ease
+}
+.go-to-menu-button:hover{
+background: #ff8383;
+color: #333;
+}
+.send-button{
+font-weight: bold;
+background: #2c7947;
+width: 160px;
+padding: 10px;
+text-align: center;
+text-decoration: none;
+color: #FFF;
+border-radius: 5px;
+cursor: pointer;
+margin: 1rem;
+transition: background-color 0.5s ease
+}
+.send-button:hover{
+  background: #399b5b;
+  color: #333;
+  }
+
+/* Style the footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;  
+}
+footer h2{
+  font-size: 90%;
+}
+footer h3{
+  font-size: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p{
+  font-size: 60%;
+}
